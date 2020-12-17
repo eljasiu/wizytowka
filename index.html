@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jan Eliasz</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -18,7 +19,7 @@
             <div class="header-text">
                 <h1>CZEŚĆ</h1>
                 <p>Mam na imię Jan. Dziękuję za odwiedzenie mojej strony! Aby się ze mną skontaktować wciśnij przycisk poniżej.</p>
-                <button class="btn">Napisz do mnie</button>
+                <a href="#contact"><button class="btn">Napisz do mnie</button></a>
             </div>
 
         </div>
@@ -32,7 +33,7 @@
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="wrapper">
             <h2>NAPISZ DO MNIE</h2>
 
@@ -44,9 +45,20 @@
                 <input type="text" placeholder="Imię">
                 <input type="email" placeholder="Adres email">
                 <textarea placeholder="Wiadomość"></textarea>
-                <input type="submit" value="Wyślij" class="btn">
+                <button class="btn form-submit" type="submit">Wyślij</button>
             </form>
         </div>
     </section>
+
+    <footer class="footer">
+        <div class="wrapper">
+            <p>Jan Eliasz CodersCamp 2020</p>
+            <ul class="footer-socials">
+                <li><a href="#"><i class="fab fa-github"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
