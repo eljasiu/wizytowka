@@ -78,7 +78,6 @@ ul{
     display: flex;
     flex-direction: column;
     align-items: center;
-
     text-align: center;
 }
 
@@ -192,6 +191,11 @@ textarea{
         flex-direction: column;
         align-items: flex-start;
         text-align: left;
+
+        
+        animation-name: slideDown;
+        animation-duration: 1s;
+        animation-timing-function: ease;
     }
 
 
@@ -261,4 +265,27 @@ textarea{
     .contact .img-container{
         display: none;
     }
+}
+
+
+
+@keyframes slideDown{
+    0% {
+        transform: translateY(-100%);
+    }
+    50%{
+        transform: translateY(8%);
+    }
+    65%{
+        transform: translateY(-4%);
+    }
+    80%{
+        transform: translateY(4%);
+    }
+    95%{
+        transform: translateY(-2%);
+    }			
+    100% {
+        transform: translateY(0%);
+    }		
 }
